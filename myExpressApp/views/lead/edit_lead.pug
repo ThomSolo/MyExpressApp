@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+  .container
+    h1.page-title Lead Edit
+    form(action="/lead/" + lead.id + "/edit", method="POST")
+      .form-group
+        label(for="lead_id") ID
+        input#lead_id.form-control(name="lead_id", type="text", value=lead.id)
+      .form-group
+        label(for="lead_name") Name
+        input#lead_name.form-control(name="lead_name", type="text", value=lead.name)
+      .form-group
+        label(for="lead_email") Email
+        input#lead_email.form-control(name="lead_email", type="email", value=lead.email)
+      button.btn.btn-primary(type="submit") Save

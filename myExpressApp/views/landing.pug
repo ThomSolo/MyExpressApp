@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  .container
+    h1.page-title Welcome to Solomon Thomas #{title}
+    form(action="/", method="POST")
+      .form-group
+        label(for="lead_id") ID
+        input#lead_id.form-control(name="lead_id" type="text" placeholder="Enter your ID" required)
+      .form-group
+        label(for="lead_name") First Name
+        input#lead_name.form-control(name="lead_name" type="text" placeholder="Enter your First name" required)
+      .form-group
+        label(for="lead_email") Email
+        input#lead_email.form-control(name="lead_email" type="email" placeholder="Enter your Email" required)
+      button.btn.btn-primary(type="submit") Submit
+  if leads
+    h2.page-subtitle Leads
+    table.table.table-striped
+      thead
+        tr
+          th ID
+          th First Name
+          th Email
+          th Details
+      tbody
+        each lead in leads
+          tr(data-href="/lead/" + lead.id)
+            td #{lead.id}
+            td #{lead.name}
+            td #{lead.email}
+            td 
+              a.btn.btn-secondary(href="/lead/" + lead.id) Details

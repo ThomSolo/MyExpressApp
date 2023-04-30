@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  .container
+    h1.page-title Lead Display
+    table.table
+      tbody
+        tr
+          td.table-label ID
+          td #{lead.id}
+        tr
+          td.table-label Name
+          td #{lead.name}
+        tr
+          td.table-label Email
+          td #{lead.email}
+        tr
+          td.text-center
+            a.btn.btn-primary(href="/lead/" + lead.id + "/edit") Edit

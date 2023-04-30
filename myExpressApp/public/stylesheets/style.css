@@ -1,0 +1,91 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-title {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input.form-control {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input.form-control:focus {
+  border-color: #00B7FF;
+  box-shadow: 0 0 0 0.2rem rgba(0, 183, 255, 0.25);
+}
+
+button.btn.btn-primary {
+  display: block;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00B7FF;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+button.btn.btn-primary:hover {
+  background-color: #0088CC;
+}
+
+.page-subtitle {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+table.table {
+  width: 100%;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+}
+
+.table thead th {
+  padding: 10px;
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 2px solid #ccc;
+}
+
+.table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.table tbody tr:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #6C757D;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 
+}
